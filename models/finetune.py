@@ -21,8 +21,8 @@ init_weight_decay = 0.0005
 
 epochs = 80
 lrate = 0.1
-milestones = [40, 70]
-lrate_decay = 0.1
+milestones = [49, 63]
+lrate_decay = 1/5
 batch_size = 128
 weight_decay = 2e-4
 num_workers = 8

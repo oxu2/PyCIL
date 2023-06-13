@@ -197,3 +197,233 @@
 2023-05-28 20:20:14,274 [trainer.py] => NME top1 curve: [89.9, 78.2, 75.4, 68.82, 65.1, 61.45, 58.1, 53.89, 51.52, 49.8]
 2023-05-28 20:20:14,274 [trainer.py] => NME top5 curve: [99.7, 95.9, 94.03, 91.2, 88.54, 85.65, 83.59, 81.3, 78.26, 76.89]
 
+2023-06-13 09:54:45,826 [trainer.py] => config: ./exps/icarl.json
+2023-06-13 09:54:45,826 [trainer.py] => prefix: reproduce
+2023-06-13 09:54:45,826 [trainer.py] => dataset: cifar100
+2023-06-13 09:54:45,826 [trainer.py] => memory_size: 2000
+2023-06-13 09:54:45,827 [trainer.py] => memory_per_class: 20
+2023-06-13 09:54:45,827 [trainer.py] => fixed_memory: False
+2023-06-13 09:54:45,827 [trainer.py] => shuffle: True
+2023-06-13 09:54:45,827 [trainer.py] => init_cls: 10
+2023-06-13 09:54:45,827 [trainer.py] => increment: 10
+2023-06-13 09:54:45,827 [trainer.py] => model_name: icarl
+2023-06-13 09:54:45,827 [trainer.py] => convnet_type: resnet32
+2023-06-13 09:54:45,827 [trainer.py] => device: [device(type='cuda', index=0), device(type='cuda', index=1), device(type='cuda', index=2), device(type='cuda', index=3)]
+2023-06-13 09:54:45,827 [trainer.py] => seed: 1993
+2023-06-13 09:54:47,008 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2023-06-13 09:54:47,255 [trainer.py] => All params: 464154
+2023-06-13 09:54:47,255 [trainer.py] => Trainable params: 464154
+2023-06-13 09:54:47,255 [icarl.py] => Learning on 0-10
+2023-06-13 10:04:10,240 [icarl.py] => Task 0, Epoch 200/200 => Loss 2.303, Train_accy 10.00
+2023-06-13 10:04:10,241 [base.py] => Reducing exemplars...(200 per classes)
+2023-06-13 10:04:10,241 [base.py] => Constructing exemplars...(200 per classes)
+2023-06-13 10:04:27,741 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:04:27,742 [trainer.py] => CNN: {'total': 10.0, '00-09': 10.0, 'old': 0, 'new': 10.0}
+2023-06-13 10:04:27,742 [trainer.py] => NME: {'total': 10.0, '00-09': 10.0, 'old': 0, 'new': 10.0}
+2023-06-13 10:04:27,742 [trainer.py] => CNN top1 curve: [10.0]
+2023-06-13 10:04:27,742 [trainer.py] => CNN top5 curve: [50.0]
+2023-06-13 10:04:27,742 [trainer.py] => NME top1 curve: [10.0]
+2023-06-13 10:04:27,742 [trainer.py] => NME top5 curve: [50.0]
+
+2023-06-13 10:04:27,742 [trainer.py] => All params: 464804
+2023-06-13 10:04:27,742 [trainer.py] => Trainable params: 464804
+2023-06-13 10:04:27,742 [icarl.py] => Learning on 10-20
+2023-06-13 10:08:36,320 [icarl.py] => Task 1, Epoch 70/70 => Loss 5.206, Train_accy 6.47
+2023-06-13 10:08:36,321 [base.py] => Reducing exemplars...(100 per classes)
+2023-06-13 10:08:43,481 [base.py] => Constructing exemplars...(100 per classes)
+2023-06-13 10:09:00,784 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:09:00,784 [trainer.py] => CNN: {'total': 5.0, '00-09': 0.0, '10-19': 10.0, 'old': 0.0, 'new': 10.0}
+2023-06-13 10:09:00,784 [trainer.py] => NME: {'total': 5.0, '00-09': 10.0, '10-19': 0.0, 'old': 10.0, 'new': 0.0}
+2023-06-13 10:09:00,784 [trainer.py] => CNN top1 curve: [10.0, 5.0]
+2023-06-13 10:09:00,784 [trainer.py] => CNN top5 curve: [50.0, 25.0]
+2023-06-13 10:09:00,784 [trainer.py] => NME top1 curve: [10.0, 5.0]
+2023-06-13 10:09:00,784 [trainer.py] => NME top5 curve: [50.0, 25.0]
+
+2023-06-13 10:09:00,784 [trainer.py] => All params: 465454
+2023-06-13 10:09:00,784 [trainer.py] => Trainable params: 465454
+2023-06-13 10:09:00,785 [icarl.py] => Learning on 20-30
+2023-06-13 10:10:46,712 [trainer.py] => config: ./exps/icarl.json
+2023-06-13 10:10:46,712 [trainer.py] => prefix: reproduce
+2023-06-13 10:10:46,712 [trainer.py] => dataset: cifar100
+2023-06-13 10:10:46,712 [trainer.py] => memory_size: 2000
+2023-06-13 10:10:46,712 [trainer.py] => memory_per_class: 20
+2023-06-13 10:10:46,712 [trainer.py] => fixed_memory: False
+2023-06-13 10:10:46,712 [trainer.py] => shuffle: True
+2023-06-13 10:10:46,712 [trainer.py] => init_cls: 10
+2023-06-13 10:10:46,712 [trainer.py] => increment: 10
+2023-06-13 10:10:46,712 [trainer.py] => model_name: icarl
+2023-06-13 10:10:46,712 [trainer.py] => convnet_type: resnet32
+2023-06-13 10:10:46,712 [trainer.py] => device: [device(type='cuda', index=0), device(type='cuda', index=1), device(type='cuda', index=2), device(type='cuda', index=3)]
+2023-06-13 10:10:46,712 [trainer.py] => seed: 1993
+2023-06-13 10:10:47,797 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2023-06-13 10:10:48,046 [trainer.py] => All params: 464154
+2023-06-13 10:10:48,046 [trainer.py] => Trainable params: 464154
+2023-06-13 10:10:48,046 [icarl.py] => Learning on 0-10
+2023-06-13 10:14:08,639 [icarl.py] => Task 0, Epoch 70/70 => Loss 0.122, Train_accy 96.22
+2023-06-13 10:14:08,640 [base.py] => Reducing exemplars...(200 per classes)
+2023-06-13 10:14:08,641 [base.py] => Constructing exemplars...(200 per classes)
+2023-06-13 10:14:25,791 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:14:25,791 [trainer.py] => CNN: {'total': 90.4, '00-09': 90.4, 'old': 0, 'new': 90.4}
+2023-06-13 10:14:25,791 [trainer.py] => NME: {'total': 90.1, '00-09': 90.1, 'old': 0, 'new': 90.1}
+2023-06-13 10:14:25,791 [trainer.py] => CNN top1 curve: [90.4]
+2023-06-13 10:14:25,791 [trainer.py] => CNN top5 curve: [99.6]
+2023-06-13 10:14:25,791 [trainer.py] => NME top1 curve: [90.1]
+2023-06-13 10:14:25,791 [trainer.py] => NME top5 curve: [99.4]
+
+2023-06-13 10:14:25,791 [trainer.py] => All params: 464804
+2023-06-13 10:14:25,792 [trainer.py] => Trainable params: 464804
+2023-06-13 10:14:25,792 [icarl.py] => Learning on 10-20
+2023-06-13 10:16:07,037 [trainer.py] => config: ./exps/icarl.json
+2023-06-13 10:16:07,037 [trainer.py] => prefix: reproduce
+2023-06-13 10:16:07,037 [trainer.py] => dataset: cifar100
+2023-06-13 10:16:07,037 [trainer.py] => memory_size: 2000
+2023-06-13 10:16:07,037 [trainer.py] => memory_per_class: 20
+2023-06-13 10:16:07,037 [trainer.py] => fixed_memory: False
+2023-06-13 10:16:07,037 [trainer.py] => shuffle: True
+2023-06-13 10:16:07,037 [trainer.py] => init_cls: 10
+2023-06-13 10:16:07,037 [trainer.py] => increment: 10
+2023-06-13 10:16:07,037 [trainer.py] => model_name: icarl
+2023-06-13 10:16:07,037 [trainer.py] => convnet_type: resnet32
+2023-06-13 10:16:07,037 [trainer.py] => device: [device(type='cuda', index=0), device(type='cuda', index=1), device(type='cuda', index=2), device(type='cuda', index=3)]
+2023-06-13 10:16:07,037 [trainer.py] => seed: 1993
+2023-06-13 10:16:08,168 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2023-06-13 10:16:08,419 [trainer.py] => All params: 464154
+2023-06-13 10:16:08,420 [trainer.py] => Trainable params: 464154
+2023-06-13 10:16:08,420 [icarl.py] => Learning on 0-10
+2023-06-13 10:23:53,781 [icarl.py] => Task 0, Epoch 200/200 => Loss 0.037, Train_accy 99.42
+2023-06-13 10:23:53,782 [base.py] => Reducing exemplars...(200 per classes)
+2023-06-13 10:23:53,783 [base.py] => Constructing exemplars...(200 per classes)
+2023-06-13 10:24:07,396 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:24:07,396 [trainer.py] => CNN: {'total': 90.6, '00-09': 90.6, 'old': 0, 'new': 90.6}
+2023-06-13 10:24:07,396 [trainer.py] => NME: {'total': 89.9, '00-09': 89.9, 'old': 0, 'new': 89.9}
+2023-06-13 10:24:07,396 [trainer.py] => CNN top1 curve: [90.6]
+2023-06-13 10:24:07,396 [trainer.py] => CNN top5 curve: [99.5]
+2023-06-13 10:24:07,396 [trainer.py] => NME top1 curve: [89.9]
+2023-06-13 10:24:07,396 [trainer.py] => NME top5 curve: [99.7]
+
+2023-06-13 10:24:07,396 [trainer.py] => All params: 464804
+2023-06-13 10:24:07,396 [trainer.py] => Trainable params: 464804
+2023-06-13 10:24:07,397 [icarl.py] => Learning on 10-20
+2023-06-13 10:27:49,820 [icarl.py] => Task 1, Epoch 70/70 => Loss 3.163, Train_accy 51.53
+2023-06-13 10:27:49,821 [base.py] => Reducing exemplars...(100 per classes)
+2023-06-13 10:27:55,323 [base.py] => Constructing exemplars...(100 per classes)
+2023-06-13 10:28:08,755 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:28:08,755 [trainer.py] => CNN: {'total': 48.3, '00-09': 43.9, '10-19': 52.7, 'old': 43.9, 'new': 52.7}
+2023-06-13 10:28:08,755 [trainer.py] => NME: {'total': 47.35, '00-09': 51.5, '10-19': 43.2, 'old': 51.5, 'new': 43.2}
+2023-06-13 10:28:08,755 [trainer.py] => CNN top1 curve: [90.6, 48.3]
+2023-06-13 10:28:08,755 [trainer.py] => CNN top5 curve: [99.5, 83.35]
+2023-06-13 10:28:08,755 [trainer.py] => NME top1 curve: [89.9, 47.35]
+2023-06-13 10:28:08,755 [trainer.py] => NME top5 curve: [99.7, 83.05]
+
+2023-06-13 10:28:08,756 [trainer.py] => All params: 465454
+2023-06-13 10:28:08,756 [trainer.py] => Trainable params: 465454
+2023-06-13 10:28:08,756 [icarl.py] => Learning on 20-30
+2023-06-13 10:31:51,927 [icarl.py] => Task 2, Epoch 70/70 => Loss 3.826, Train_accy 59.30
+2023-06-13 10:31:51,927 [base.py] => Reducing exemplars...(66 per classes)
+2023-06-13 10:32:02,821 [base.py] => Constructing exemplars...(66 per classes)
+2023-06-13 10:32:16,088 [icarl.py] => Exemplar size: 1980
+2023-06-13 10:32:16,088 [trainer.py] => CNN: {'total': 38.27, '00-09': 29.8, '10-19': 13.0, '20-29': 72.0, 'old': 21.4, 'new': 72.0}
+2023-06-13 10:32:16,088 [trainer.py] => NME: {'total': 41.77, '00-09': 43.2, '10-19': 29.4, '20-29': 52.7, 'old': 36.3, 'new': 52.7}
+2023-06-13 10:32:16,088 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27]
+2023-06-13 10:32:16,088 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7]
+2023-06-13 10:32:16,088 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77]
+2023-06-13 10:32:16,088 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27]
+
+2023-06-13 10:32:16,088 [trainer.py] => All params: 466104
+2023-06-13 10:32:16,088 [trainer.py] => Trainable params: 466104
+2023-06-13 10:32:16,089 [icarl.py] => Learning on 30-40
+2023-06-13 10:35:54,945 [icarl.py] => Task 3, Epoch 70/70 => Loss 4.445, Train_accy 52.39
+2023-06-13 10:35:54,946 [base.py] => Reducing exemplars...(50 per classes)
+2023-06-13 10:36:11,389 [base.py] => Constructing exemplars...(50 per classes)
+2023-06-13 10:36:24,591 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:36:24,592 [trainer.py] => CNN: {'total': 27.05, '00-09': 19.0, '10-19': 3.5, '20-29': 20.3, '30-39': 65.4, 'old': 14.27, 'new': 65.4}
+2023-06-13 10:36:24,592 [trainer.py] => NME: {'total': 33.95, '00-09': 37.2, '10-19': 23.8, '20-29': 38.0, '30-39': 36.8, 'old': 33.0, 'new': 36.8}
+2023-06-13 10:36:24,592 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05]
+2023-06-13 10:36:24,592 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3]
+2023-06-13 10:36:24,592 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95]
+2023-06-13 10:36:24,592 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8]
+
+2023-06-13 10:36:24,592 [trainer.py] => All params: 466754
+2023-06-13 10:36:24,592 [trainer.py] => Trainable params: 466754
+2023-06-13 10:36:24,593 [icarl.py] => Learning on 40-50
+2023-06-13 10:40:11,144 [icarl.py] => Task 4, Epoch 70/70 => Loss 4.679, Train_accy 58.73
+2023-06-13 10:40:11,145 [base.py] => Reducing exemplars...(40 per classes)
+2023-06-13 10:40:33,989 [base.py] => Constructing exemplars...(40 per classes)
+2023-06-13 10:40:47,883 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:40:47,883 [trainer.py] => CNN: {'total': 23.62, '00-09': 10.3, '10-19': 4.0, '20-29': 14.6, '30-39': 17.2, '40-49': 72.0, 'old': 11.52, 'new': 72.0}
+2023-06-13 10:40:47,883 [trainer.py] => NME: {'total': 31.28, '00-09': 31.8, '10-19': 20.0, '20-29': 31.3, '30-39': 24.9, '40-49': 48.4, 'old': 27.0, 'new': 48.4}
+2023-06-13 10:40:47,883 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62]
+2023-06-13 10:40:47,883 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82]
+2023-06-13 10:40:47,883 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28]
+2023-06-13 10:40:47,883 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3]
+
+2023-06-13 10:40:47,883 [trainer.py] => All params: 467404
+2023-06-13 10:40:47,883 [trainer.py] => Trainable params: 467404
+2023-06-13 10:40:47,884 [icarl.py] => Learning on 50-60
+2023-06-13 10:44:40,223 [icarl.py] => Task 5, Epoch 70/70 => Loss 5.161, Train_accy 49.96
+2023-06-13 10:44:40,224 [base.py] => Reducing exemplars...(33 per classes)
+2023-06-13 10:45:07,870 [base.py] => Constructing exemplars...(33 per classes)
+2023-06-13 10:45:21,716 [icarl.py] => Exemplar size: 1980
+2023-06-13 10:45:21,716 [trainer.py] => CNN: {'total': 20.35, '00-09': 8.5, '10-19': 4.0, '20-29': 11.4, '30-39': 9.7, '40-49': 26.4, '50-59': 62.1, 'old': 12.0, 'new': 62.1}
+2023-06-13 10:45:21,716 [trainer.py] => NME: {'total': 26.22, '00-09': 24.1, '10-19': 19.8, '20-29': 27.5, '30-39': 20.2, '40-49': 30.9, '50-59': 34.8, 'old': 24.5, 'new': 34.8}
+2023-06-13 10:45:21,716 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62, 20.35]
+2023-06-13 10:45:21,716 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82, 51.13]
+2023-06-13 10:45:21,716 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28, 26.22]
+2023-06-13 10:45:21,716 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3, 58.38]
+
+2023-06-13 10:45:21,716 [trainer.py] => All params: 468054
+2023-06-13 10:45:21,717 [trainer.py] => Trainable params: 468054
+2023-06-13 10:45:21,717 [icarl.py] => Learning on 60-70
+2023-06-13 10:49:08,728 [icarl.py] => Task 6, Epoch 70/70 => Loss 5.540, Train_accy 48.22
+2023-06-13 10:49:08,729 [base.py] => Reducing exemplars...(28 per classes)
+2023-06-13 10:49:42,926 [base.py] => Constructing exemplars...(28 per classes)
+2023-06-13 10:49:57,166 [icarl.py] => Exemplar size: 1960
+2023-06-13 10:49:57,166 [trainer.py] => CNN: {'total': 18.77, '00-09': 6.9, '10-19': 3.4, '20-29': 11.9, '30-39': 9.5, '40-49': 16.8, '50-59': 18.2, '60-69': 64.7, 'old': 11.12, 'new': 64.7}
+2023-06-13 10:49:57,166 [trainer.py] => NME: {'total': 22.07, '00-09': 17.0, '10-19': 14.0, '20-29': 22.6, '30-39': 15.5, '40-49': 23.1, '50-59': 25.7, '60-69': 36.6, 'old': 19.65, 'new': 36.6}
+2023-06-13 10:49:57,166 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62, 20.35, 18.77]
+2023-06-13 10:49:57,166 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82, 51.13, 44.2]
+2023-06-13 10:49:57,166 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28, 26.22, 22.07]
+2023-06-13 10:49:57,166 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3, 58.38, 52.03]
+
+2023-06-13 10:49:57,166 [trainer.py] => All params: 468704
+2023-06-13 10:49:57,166 [trainer.py] => Trainable params: 468704
+2023-06-13 10:49:57,167 [icarl.py] => Learning on 70-80
+2023-06-13 10:53:46,488 [icarl.py] => Task 7, Epoch 70/70 => Loss 5.757, Train_accy 48.68
+2023-06-13 10:53:46,489 [base.py] => Reducing exemplars...(25 per classes)
+2023-06-13 10:54:26,545 [base.py] => Constructing exemplars...(25 per classes)
+2023-06-13 10:54:40,834 [icarl.py] => Exemplar size: 2000
+2023-06-13 10:54:40,834 [trainer.py] => CNN: {'total': 13.4, '00-09': 3.7, '10-19': 2.0, '20-29': 8.1, '30-39': 5.9, '40-49': 6.7, '50-59': 3.8, '60-69': 9.9, '70-79': 67.1, 'old': 5.73, 'new': 67.1}
+2023-06-13 10:54:40,834 [trainer.py] => NME: {'total': 19.9, '00-09': 16.7, '10-19': 12.8, '20-29': 20.9, '30-39': 14.3, '40-49': 19.9, '50-59': 18.5, '60-69': 24.2, '70-79': 31.9, 'old': 18.19, 'new': 31.9}
+2023-06-13 10:54:40,834 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62, 20.35, 18.77, 13.4]
+2023-06-13 10:54:40,834 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82, 51.13, 44.2, 37.0]
+2023-06-13 10:54:40,834 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28, 26.22, 22.07, 19.9]
+2023-06-13 10:54:40,834 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3, 58.38, 52.03, 47.91]
+
+2023-06-13 10:54:40,834 [trainer.py] => All params: 469354
+2023-06-13 10:54:40,835 [trainer.py] => Trainable params: 469354
+2023-06-13 10:54:40,835 [icarl.py] => Learning on 80-90
+2023-06-13 10:58:37,006 [icarl.py] => Task 8, Epoch 70/70 => Loss 6.107, Train_accy 47.07
+2023-06-13 10:58:37,007 [base.py] => Reducing exemplars...(22 per classes)
+2023-06-13 10:59:26,317 [base.py] => Constructing exemplars...(22 per classes)
+2023-06-13 10:59:41,728 [icarl.py] => Exemplar size: 1980
+2023-06-13 10:59:41,728 [trainer.py] => CNN: {'total': 10.7, '00-09': 2.8, '10-19': 0.0, '20-29': 3.7, '30-39': 2.5, '40-49': 14.0, '50-59': 1.5, '60-69': 1.4, '70-79': 6.0, '80-89': 64.4, 'old': 3.99, 'new': 64.4}
+2023-06-13 10:59:41,729 [trainer.py] => NME: {'total': 16.33, '00-09': 14.6, '10-19': 6.2, '20-29': 17.1, '30-39': 10.5, '40-49': 19.6, '50-59': 17.1, '60-69': 14.8, '70-79': 16.5, '80-89': 30.6, 'old': 14.55, 'new': 30.6}
+2023-06-13 10:59:41,729 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62, 20.35, 18.77, 13.4, 10.7]
+2023-06-13 10:59:41,729 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82, 51.13, 44.2, 37.0, 31.72]
+2023-06-13 10:59:41,729 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28, 26.22, 22.07, 19.9, 16.33]
+2023-06-13 10:59:41,729 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3, 58.38, 52.03, 47.91, 41.2]
+
+2023-06-13 10:59:41,729 [trainer.py] => All params: 470004
+2023-06-13 10:59:41,729 [trainer.py] => Trainable params: 470004
+2023-06-13 10:59:41,730 [icarl.py] => Learning on 90-100
+2023-06-13 11:03:43,566 [icarl.py] => Task 9, Epoch 70/70 => Loss 6.473, Train_accy 42.55
+2023-06-13 11:03:43,567 [base.py] => Reducing exemplars...(20 per classes)
+2023-06-13 11:04:39,377 [base.py] => Constructing exemplars...(20 per classes)
+2023-06-13 11:04:55,174 [icarl.py] => Exemplar size: 2000
+2023-06-13 11:04:55,175 [trainer.py] => CNN: {'total': 7.01, '00-09': 0.4, '10-19': 0.4, '20-29': 0.1, '30-39': 0.7, '40-49': 4.7, '50-59': 0.0, '60-69': 1.3, '70-79': 1.9, '80-89': 4.4, '90-99': 56.2, 'old': 1.54, 'new': 56.2}
+2023-06-13 11:04:55,175 [trainer.py] => NME: {'total': 12.84, '00-09': 13.8, '10-19': 6.9, '20-29': 13.8, '30-39': 8.1, '40-49': 12.7, '50-59': 13.9, '60-69': 12.0, '70-79': 11.4, '80-89': 12.3, '90-99': 23.5, 'old': 11.66, 'new': 23.5}
+2023-06-13 11:04:55,175 [trainer.py] => CNN top1 curve: [90.6, 48.3, 38.27, 27.05, 23.62, 20.35, 18.77, 13.4, 10.7, 7.01]
+2023-06-13 11:04:55,175 [trainer.py] => CNN top5 curve: [99.5, 83.35, 74.7, 64.3, 57.82, 51.13, 44.2, 37.0, 31.72, 24.0]
+2023-06-13 11:04:55,175 [trainer.py] => NME top1 curve: [89.9, 47.35, 41.77, 33.95, 31.28, 26.22, 22.07, 19.9, 16.33, 12.84]
+2023-06-13 11:04:55,175 [trainer.py] => NME top5 curve: [99.7, 83.05, 76.27, 68.8, 64.3, 58.38, 52.03, 47.91, 41.2, 36.86]
+
